@@ -1,3 +1,6 @@
+//CCC '03 S3 - Floor Plan
+//https://dmoj.ca/problem/ccc03s3
+
 #include <iostream>
 #include <vector>
 #include <set>
