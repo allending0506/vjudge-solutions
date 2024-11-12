@@ -3,8 +3,7 @@
 #include <vector>
 using namespace std;
 
-int taller[1000000][2] {-1};
-vector<int> tallert[100000];
+vector<int> taller[100000];
 
 void findPath(int p, int q, int n, int m){
   queue<int> visitNextTaller;
@@ -20,7 +19,7 @@ void findPath(int p, int q, int n, int m){
         cout << "yes";
         return;
       }
-      for (auto& i : tallert[visitNextTaller.front()]){
+      for (auto& i : taller[visitNextTaller.front()]){
         if(!visitedTaller[i]){
           visitNextTaller.push(i);
           visitedTaller[i] = true;
@@ -34,7 +33,7 @@ void findPath(int p, int q, int n, int m){
         cout << "no";
         return;
       }
-      for (auto& i : tallert[visitNextShorter.front()]){
+      for (auto& i : taller[visitNextShorter.front()]){
         if(!visitedShorter[i]){
           visitNextShorter.push(i);
           visitedShorter[i] = true;
@@ -52,7 +51,7 @@ int main(){
   for (int i = 0; i < m; i++){
     int tem1, tem2;
     cin >> tem1 >> tem2;
-    tallert[tem1].push_back(tem2);
+    taller[tem1].push_back(tem2);
   }
   cin >> p >> q;
   findPath(p, q, n, m);
