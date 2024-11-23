@@ -1,5 +1,5 @@
-# DMOJ solutions #
-A growing list of my personal solutions to various problems found on the DMOJ website. Solutions are mainly in C++ but I might add other languages.
+# VJudge solutions #
+A growing list of my personal solutions to various problems found on the VJudge site (and other online programming competition judges). Solutions are mainly in C++ but I might add other languages.
 
   
 ## Licensing
